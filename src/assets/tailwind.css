@@ -1,0 +1,18 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+.active {
+  color: #fff;
+}
+
+.page {
+  position: absolute;
+}
