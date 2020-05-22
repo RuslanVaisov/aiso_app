@@ -25,10 +25,7 @@ const Navbar = () => {
   };
 
   return (
-    <div
-      style={{ height: "72px" }}
-      className="showcase w-full h-8 relative z-10"
-    >
+    <div className="w-full relative z-10">
       <section
         ref={(el) => (navEffect = el)}
         className="navbar fixed w-full bg-gray-900 font-ubuntu"
@@ -81,10 +78,7 @@ const Navbar = () => {
           {/* navlist items */}
           {isOpen ? (
             <React.Fragment>
-              <div
-                style={{ marginTop: "-72px", paddingTop: "72px" }}
-                className="h-half flex flex-col justify-center"
-              >
+              <div className="h-half flex flex-col justify-center pt-16 -mt-16">
                 <div className="visible opacity-100 items-center">
                   <ul className="flex flex-col text-center">
                     <li className="py-2">

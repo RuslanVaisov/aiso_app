@@ -23,7 +23,6 @@ const Showcase = () => {
   return (
     <section className="font-ubuntu relative w-full h-full">
       <div className="showcase w-full h-half bg-gray-900 relative">
-        {/* <Navbar /> */}
         <div className="hero-section flex flex-col h-full justify-center items-center px-6">
           <h1
             ref={(el) => (line1 = el)}

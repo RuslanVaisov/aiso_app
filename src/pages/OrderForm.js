@@ -41,7 +41,7 @@ const OrderForm = () => {
 
   return (
     <React.Fragment>
-      <div className="bg-gray-900 w-full min-h-screen flex p-4 pt-12 flex-col text-white justify-center items-center">
+      <div className="bg-gray-900 w-full min-h-screen flex p-4 pt-24 flex-col text-white justify-center items-center">
         <h1
           ref={(el) => (orderHeaderEffect = el)}
           className="sm:text-4xl text-3xl tracking-widest text-center font-semibold max-w-screen-lg p-2"

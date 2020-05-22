@@ -28,10 +28,7 @@ const Contact = () => {
 
   return (
     <React.Fragment>
-      <div
-        style={{ marginTop: "-72px" }}
-        className="bg-gray-900 w-full h-screen flex flex-col text-white justify-center items-center p-8"
-      >
+      <div className="bg-gray-900 w-full h-screen flex flex-col text-white justify-center items-center p-8">
         <div ref={(el) => (phoneEffect = el)} className="my-8">
           {/* <h1 className="tracking-widest pb-1 text-lg text-red-500 font-medium text-center">
             Телефон:

@@ -26,7 +26,7 @@ function AboutUs() {
 
   return (
     <React.Fragment>
-      <div className="bg-gray-900 w-full min-h-screen flex flex-col text-white justify-center items-center">
+      <div className="bg-gray-900 w-full min-h-screen pt-16 flex flex-col text-white justify-center items-center">
         <div className="flex flex-col max-w-4xl">
           <h1
             ref={(el) => (aboutHeaderEffect = el)}
