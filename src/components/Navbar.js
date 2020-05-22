@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div
       style={{ height: "72px" }}
-      className="showcase w-full h-8 bg-gray-900 relative z-10"
+      className="showcase w-full h-8 relative z-10"
     >
       <section
         ref={(el) => (navEffect = el)}

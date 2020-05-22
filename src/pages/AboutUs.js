@@ -25,7 +25,7 @@ function AboutUs() {
   });
 
   return (
-    <>
+    <React.Fragment>
       <div className="bg-gray-900 w-full min-h-screen flex flex-col text-white justify-center items-center">
         <div className="flex flex-col max-w-4xl">
           <h1
@@ -48,7 +48,7 @@ function AboutUs() {
         </div>
         <div
           ref={(el) => (aboutEffect = el)}
-          className="grid grid-cols-1 sm:grid-cols-2 gap-10 opacity-75 p-12 max-w-4xl"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-12 max-w-4xl"
         >
           <div>
             <img src={Ruslan} alt="Ruslan Vaisov" />
@@ -60,7 +60,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

@@ -12,7 +12,7 @@ import { Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <React.Fragment>
       <Navbar />
 
       <Switch>
@@ -25,7 +25,7 @@ function App() {
         <Route exact path="/Confirmation" component={Confirmation} />
         <Route component={Error} />
       </Switch>
-    </>
+    </React.Fragment>
   );
 }
 

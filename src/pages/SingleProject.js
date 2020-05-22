@@ -40,7 +40,7 @@ export default class SingleProject extends Component {
     const { title, description, mainText, images, videos } = project;
 
     return (
-      <>
+      <React.Fragment>
         <div className="flex flex-col justify-center items-center">
           <div className="max-w-screen-lg my-20 px-10 m-auto">
             <h1 className="sm:text-4xl text-3xl font-bold">{title}</h1>
@@ -81,7 +81,7 @@ export default class SingleProject extends Component {
           </Link>
         </div>
         <Footer />
-      </>
+      </React.Fragment>
     );
   }
 }

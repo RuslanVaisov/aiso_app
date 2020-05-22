@@ -7,7 +7,7 @@ const Error = () => {
   });
 
   return (
-    <>
+    <React.Fragment>
       <div
         style={{ marginTop: "-72px" }}
         className="bg-gray-900 w-full h-screen flex flex-col text-white justify-center items-center"
@@ -18,7 +18,7 @@ const Error = () => {
           <Link to="/">На главную</Link>
         </button>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

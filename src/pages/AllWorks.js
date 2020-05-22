@@ -19,14 +19,14 @@ export class AllWorks extends Component {
     });
 
     return (
-      <>
-        <section className="projects max-w-screen-xl pt-16 sm:pt-20 pb-12 m-auto flex flex-col justify-center items-center">
+      <React.Fragment>
+        <section className="projects max-w-screen-xl pt-2 sm:pt-6 pb-16 m-auto flex flex-col justify-center items-center">
           <div className="grid grid-cols-1 sm:grid-cols-3">
             {loading ? <Loading /> : projects}
           </div>
         </section>
         <Footer />
-      </>
+      </React.Fragment>
     );
   }
 }

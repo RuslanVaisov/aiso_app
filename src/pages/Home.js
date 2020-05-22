@@ -10,13 +10,13 @@ const Home = () => {
     window.scrollTo(0, 0);
   });
   return (
-    <>
+    <React.Fragment>
       <Showcase />
       <MainProjects />
       <About />
       <Partners />
       <Footer />
-    </>
+    </React.Fragment>
   );
 };
 

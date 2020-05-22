@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
@@ -28,7 +27,7 @@ const Contact = () => {
   });
 
   return (
-    <>
+    <React.Fragment>
       <div
         style={{ marginTop: "-72px" }}
         className="bg-gray-900 w-full h-screen flex flex-col text-white justify-center items-center p-8"
@@ -57,46 +56,50 @@ const Contact = () => {
             Мы в социальных сетях
           </h1> */}
           <div className="flex">
-            <Link
+            <a
               className="px-3 hover:text-gray-500 text-white tracking-wider"
-              to="/"
+              href="https://www.facebook.com/Aiso-102627234635436/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <p className="text-2xl sm:text-3xl">
                 <FaFacebookSquare />
               </p>
-            </Link>
-            <Link
+            </a>
+            <a
               className="px-3 hover:text-gray-500 text-white tracking-wider"
-              to="/"
+              href="https://www.instagram.com/aiso_jr/?igshid=xe43likd9rhz"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <p className="text-2xl sm:text-3xl">
                 <FaInstagram />
               </p>
-            </Link>
-            <Link
+            </a>
+            <a
               className="px-3 hover:text-gray-500 text-white tracking-wider"
-              to="/"
+              href="https://t.me/aiso_jr"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <p className="text-2xl sm:text-3xl">
                 <FaTelegramPlane />
               </p>
-            </Link>
-            <Link
+            </a>
+            <a
               className="px-3 hover:text-gray-500 text-white tracking-wider"
-              to="/"
+              href="https://www.youtube.com/channel/UCCYeA97AWJq0k_fp4-BYJzQ/featured"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <p className="text-2xl sm:text-3xl">
                 <FaYoutube />
               </p>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

@@ -40,7 +40,7 @@ const OrderForm = () => {
   });
 
   return (
-    <>
+    <React.Fragment>
       <div className="bg-gray-900 w-full min-h-screen flex p-4 pt-12 flex-col text-white justify-center items-center">
         <h1
           ref={(el) => (orderHeaderEffect = el)}
@@ -128,7 +128,7 @@ const OrderForm = () => {
           </button>
         </form>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 
