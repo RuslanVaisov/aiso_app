@@ -1,24 +1,27 @@
-import React, { useRef, useEffect } from "react";
+import React, {
+  //  useRef,
+  useEffect,
+} from "react";
 import Javlon from "../imgs/Javlon.jpg";
 import Ruslan from "../imgs/Ruslan.jpg";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 
 function AboutUs() {
-  let aboutHeaderEffect = useRef(null);
-  let aboutParagraphEffect = useRef(null);
-  let aboutEffect = useRef(null);
+  // let aboutHeaderEffect = useRef(null);
+  // let aboutParagraphEffect = useRef(null);
+  // let aboutEffect = useRef(null);
 
-  useEffect(() => {
-    gsap.from([aboutHeaderEffect, aboutParagraphEffect, aboutEffect], 0.8, {
-      delay: 0.5,
-      ease: "power3.out",
-      y: -64,
-      opacity: 0,
-      stagger: {
-        amount: 0.15,
-      },
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.from([aboutHeaderEffect, aboutParagraphEffect, aboutEffect], 0.8, {
+  //     delay: 0.5,
+  //     ease: "power3.out",
+  //     y: -64,
+  //     opacity: 0,
+  //     stagger: {
+  //       amount: 0.15,
+  //     },
+  //   });
+  // }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,14 +32,14 @@ function AboutUs() {
       <div className="bg-gray-900 w-full min-h-screen pt-16 flex flex-col text-white justify-center items-center">
         <div className="flex flex-col max-w-4xl">
           <h1
-            ref={(el) => (aboutHeaderEffect = el)}
+            // ref={(el) => (aboutHeaderEffect = el)}
             className="sm:text-3xl text-2xl tracking-widest text-center mt-16 sm:mx-10 mx-6"
           >
             "Aiso это команда, чья миссия помогать людям и организациям выразить
             себя достойно."
           </h1>
           <p
-            ref={(el) => (aboutParagraphEffect = el)}
+            // ref={(el) => (aboutParagraphEffect = el)}
             className="text-justify sm:text-center text-lg pt-6 sm:mx-10 mx-10 text-gray-500"
           >
             Основные направления — графический дизайн (логотипов, упаковок,
@@ -47,7 +50,7 @@ function AboutUs() {
           </p>
         </div>
         <div
-          ref={(el) => (aboutEffect = el)}
+          // ref={(el) => (aboutEffect = el)}
           className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-12 max-w-4xl"
         >
           <div>

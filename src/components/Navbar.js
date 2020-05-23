@@ -1,20 +1,23 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, {
+  useState,
+  // useRef, useEffect
+} from "react";
 import logo from "../imgs/logo.png";
 import { NavLink } from "react-router-dom";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 
 const Navbar = () => {
   let [isOpen, setIsOpen] = useState(false);
 
-  let navEffect = useRef(null);
+  // let navEffect = useRef(null);
 
-  useEffect(() => {
-    gsap.from(navEffect, 0.8, {
-      delay: 0.3,
-      ease: "power3.out",
-      opacity: 0,
-    });
-  }, []);
+  // useEffect(() => {
+  //   gsap.from(navEffect, 0.8, {
+  //     delay: 0.3,
+  //     ease: "power3.out",
+  //     opacity: 0,
+  //   });
+  // }, []);
 
   // outsideclick
 
@@ -27,7 +30,7 @@ const Navbar = () => {
   return (
     <div className="w-full relative z-10">
       <section
-        ref={(el) => (navEffect = el)}
+        // ref={(el) => (navEffect = el)}
         className="navbar fixed w-full bg-gray-900 font-ubuntu"
       >
         <header className="max-w-screen-xl mx-auto sm:flex justify-between items-center py-2 px-4 sm:py-3 sm:px-6">
