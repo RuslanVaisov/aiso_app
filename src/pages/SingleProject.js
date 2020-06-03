@@ -23,7 +23,7 @@ export default class SingleProject extends Component {
     const project = getProject(this.state.slug);
     if (!project) {
       return (
-        <div className="w-full h-screen -mt-8 flex flex-col bg-gray-900 justify-center items-center text-white">
+        <div className="w-full h-screen flex flex-col bg-gray-900 justify-center items-center text-white">
           <h3 className="text-3xl text-center p-8">
             Информация про данный проект отсутствует...
           </h3>
@@ -42,7 +42,7 @@ export default class SingleProject extends Component {
     return (
       <React.Fragment>
         <div className="flex flex-col justify-center items-center">
-          <div className="max-w-screen-lg my-20 px-10 m-auto">
+          <div className="max-w-screen-lg my-24 px-10 m-auto">
             <h1 className="sm:text-4xl text-3xl font-bold">{title}</h1>
             <h2 className="sm:text-xl text-lg text-red-600 font-medium py-2">
               {description}
